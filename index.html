@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav><a href="ViewStudent.html">student</a></nav>
+    </header>
+
+    <main>
+        
+    <div class="form-container">
+        <h2>Student Details</h2>
+        <form onsubmit="handleSubmit(event)">
+            <!-- id -->
+         <!-- <div class="form-group">
+            <label for="id">Id</label>
+            <input type="number" class="form-control" id="id" placeholder="Enter your id" >
+          </div> -->
+          <!-- name -->
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <!-- age -->
+          <div class="form-group">
+              <label for="age">Age</label>
+              <input type="number" class="form-control" id="age" placeholder="Enter your age" required>
+          </div>
+          <!-- dept -->
+          <div class="form-group">
+              <label for="dept">Department</label>
+              <input type="text" class="form-control" id="dept" placeholder="Enter your Department">
+          </div>
+  
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

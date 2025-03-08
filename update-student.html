@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Student</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        
+    <div class="form-container">
+        <h2>Update Student</h2>
+        <form id="updateForm" onsubmit="updateStudent(event)">
+            <!-- name -->
+          <div class="form-group">
+            <label for="updatedName">Name</label>
+            <input type="text" class="form-control" id="updatedName" placeholder="Enter your name">
+          </div>
+          <!-- age -->
+          <div class="form-group">
+              <label for="updatedAge">Age</label>
+              <input type="number" class="form-control" id="updatedAge" placeholder="Enter your age">
+          </div>
+          <!-- dept -->
+          <div class="form-group">
+              <label for="updatedDept">Department</label>
+              <input type="text" class="form-control" id="updatedDept" placeholder="Enter your Department">
+          </div>
+
+          <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+        </form>
+    </div>
+    </main>
+
+    <script src="update-student.js"></script>
+</body>
+</html>    
