@@ -31,7 +31,7 @@ async function updateStudent(event) {
     };
 
     try {
-        const response = await fetch(`http://localhost:8003/student/${studentId}`, {
+        const response = await fetch(`https://simple-project-y81c.onrender.com/student/${studentId}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', fetchStudent);
 
 async function fetchStudent() {
     try {
-        const response = await fetch('http://localhost:8003/students');
+        const response = await fetch('https://simple-project-y81c.onrender.com/students');
         
         if (response.ok) {
             const students = await response.json();
@@ -14,9 +14,8 @@ async function fetchStudent() {
                 <td>${student.id}</td>
                 <td>${student.name}</td>
                 <td>${student.age}</td>
-                <td>${student.dept} <button class="btn" onclick="deleteStudent(${student.id})">X</button>
-                </td>
-                <td> <button class="update" onclick="updateStudent(${student.id}, '${student.name}', ${student.age}, '${student.dept}')"> update </button> </td>
+                <td>${student.dept} </td>
+                <td class='activity'> <button class="btn delete" onclick="deleteStudent(${student.id})">Delete</button> <button class="btn update" onclick="updateStudent(${student.id}, '${student.name}', ${student.age}, '${student.dept}')"> Update </button> </td>
                 `;
 
                 tableBody.appendChild(row);
@@ -30,7 +29,7 @@ async function fetchStudent() {
 
 // delete student by id
 async function deleteStudent(id) {
-    const baseURL = `http://localhost:8003/student/${id}`;
+    const baseURL = `https://simple-project-y81c.onrender.com/student/${id}`;
     try {
         const response = await fetch(baseURL, {
             method: 'DELETE',

@@ -50,65 +50,49 @@ tr:hover {
 
 /* Hide delete button by default */
 td .btn {
-    display: none;
-    position: absolute;
-    right: 10px;
-    width: 24px;
-    height: 24px;
-    padding: 0;
-    line-height: 24px;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 12px;
-}
-
-td .update {
-    /* background: url('img/image.png') no-repeat center center; */
-    background-color: rgba(226, 81, 29, 0.847);
-    width: 100%;
-    padding: 8px;
-    font-size: 14px;
-    justify-items: center;
-    justify-content: center;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    color: white;
-    font-weight: 500;
-    transition: transform 0.2s ease;
-    margin: 1px;
-    background-size: cover;
-    display: inline-flex;
-}
-
-.update:hover {
-    transform: scale(1.05);
-}
-
-/* Show delete button only when hovering over the row */
-tr:hover td .btn {
-    display: inline-flex; /* Ensure button shows properly on hover */
-}
-
-.btn {
-    background-color: #ff4d4d;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 12px;
-    margin-left: 10px; /* Add spacing from text */
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    width: 100px;
+    height: 36px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #e2511d;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 5px;
+}
+
+.activity {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: row-reverse;
 }
 
 .btn:hover {
-    background-color: #ff1a1a;
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+
+.btn.delete {
+    background-color: #ff4b5c;
+}
+
+.btn.update {
+    background-color: #4CAF50;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn i {
+    margin-right: 6px;
+}
+
