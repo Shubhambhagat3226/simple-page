@@ -17,7 +17,7 @@
 
     console.log(JSON.stringify(student));
 
-    const baseURL = "http://localhost:8003/student"
+    const baseURL = "https://simple-project-y81c.onrender.com/student"
 
     try {
         const response = await fetch(baseURL, {
